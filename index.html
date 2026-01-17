@@ -3,18 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>
-      Famille DEMONGEOT - Expertise en Informatique, QA et Développement
-    </title>
+    <title>Famille Demongeot | Expertise QA, Développement & Systèmes IT</title>
     <meta
       name="description"
-      content="Découvrez l'expertise de la famille DEMONGEOT : Céline, Ingénieur QA certifiée ISTQB, et son frère Richard, expert en développement et systèmes informatiques."
+      content="Portail professionnel de la famille Demongeot. Céline Demongeot (Ingénieur QA Senior certifiée ISTQB) et Richard Demongeot (Expert Systèmes & Réseaux AS206014). Découvrez nos expertises et parcours IT."
     />
     <meta
       name="keywords"
-      content="demongeot, céline, ingénieur, validation, test, qa, ivvq, développement, informatique, cv, rdem systems"
+      content="demongeot, céline, ingénieur, validation, test, qa, ivvq, intégration, ISTQB, développement, informatique, cv, rdem systems"
     />
-
+    <meta
+      property="og:title"
+      content="Famille Demongeot - Experts Informatiques"
+    />
+    <meta
+      property="og:description"
+      content="Découvrez les profils de Céline (QA) et Richard (Dev/Systèmes)."
+    />
+    <meta property="og:url" content="https://www.demongeot.org" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://www.demongeot.org/og-image.jpg"
+    />
     <style>
       :root {
         --color-primary: #2563eb;
@@ -36,6 +47,7 @@
         font-family:
           -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
           "Helvetica Neue", Arial, sans-serif;
+
         line-height: 1.6;
         color: var(--color-text);
         background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -61,6 +73,7 @@
           var(--color-primary) 0%,
           var(--color-accent) 100%
         );
+
         color: var(--color-white);
         padding: 3rem 2rem;
         text-align: center;
@@ -82,6 +95,43 @@
 
       .content {
         padding: 3rem 2rem;
+      }
+
+      .about-section {
+        background: linear-gradient(
+          135deg,
+          rgba(37, 99, 235, 0.05) 0%,
+          rgba(124, 58, 237, 0.05) 100%
+        );
+        border-radius: 1rem;
+        padding: 2.5rem;
+        margin-bottom: 3rem;
+        border: 1px solid var(--color-border);
+      }
+
+      .about-section h2 {
+        font-size: 2rem;
+        color: var(--color-primary);
+        margin-bottom: 1.5rem;
+        font-weight: 700;
+        text-align: center;
+      }
+
+      .about-section p {
+        font-size: 1.0625rem;
+        color: var(--color-text);
+        line-height: 1.8;
+        margin-bottom: 1.25rem;
+        text-align: justify;
+      }
+
+      .about-section p:last-child {
+        margin-bottom: 0;
+      }
+
+      .about-section strong {
+        color: var(--color-primary);
+        font-weight: 600;
       }
 
       .intro {
@@ -108,6 +158,7 @@
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
         gap: 2rem;
+
         margin-top: 3rem;
       }
 
@@ -172,6 +223,7 @@
         font-size: 1.375rem;
         font-weight: 700;
         margin-bottom: 0.75rem;
+
         color: var(--color-primary);
       }
 
@@ -218,6 +270,19 @@
           font-size: 1rem;
         }
 
+        .about-section {
+          padding: 2rem 1.5rem;
+        }
+
+        .about-section h2 {
+          font-size: 1.625rem;
+        }
+
+        .about-section p {
+          font-size: 1rem;
+          text-align: left;
+        }
+
         .intro h2 {
           font-size: 1.5rem;
         }
@@ -248,8 +313,61 @@
         .content {
           padding: 1.5rem 1rem;
         }
+
+        .about-section {
+          padding: 1.5rem 1rem;
+        }
       }
     </style>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Céline Demongeot",
+        "jobTitle": "Ingénieur Test & Validation Senior, QA, IVVQ",
+        "url": "https://cv.demongeot.org",
+        "sameAs": ["https://www.linkedin.com/in/c%C3%A9line-demongeot/"]
+      }
+    </script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Richard Demongeot",
+        "jobTitle": "Fondateur et P-DG",
+        "url": "https://demongeot.biz",
+        "sameAs": [
+          "https://www.rdem-systems.com",
+          "https://ntp.rdem-systems.com",
+          "https://as206014.rdem-systems.com",
+          "https://mariadb.rdem-systems.com",
+          "https://proxmox.rdem-systems.com",
+          "https://managed-services.rdem-systems.com"
+        ],
+        "worksFor": {
+          "@type": "Organization",
+          "name": "RDEM Systems",
+          "url": "https://www.rdem-systems.com",
+          "logo": "https://www.rdem-systems.com/favicon.ico",
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "technical support",
+            "url": "https://managed-services.rdem-systems.com"
+          },
+          "knowsAbout": [
+            "Virtualisation Proxmox VE",
+            "Infrastructures critiques",
+            "MariaDB Clusters & Database Management",
+            "NTP Stratum Services",
+            "BGP Networking & Autonomous Systems (AS206014)",
+            "Managed Services & Infogérance"
+          ]
+        },
+        "description": "Expert en infrastructures critiques, réseaux autonomes (AS206014) et solutions de virtualisation souveraines."
+      }
+    </script>
   </head>
   <body>
     <div class="container">
@@ -262,6 +380,32 @@
       </header>
 
       <div class="content">
+        <section class="about-section">
+          <h2>À Propos</h2>
+          <p>
+            Bienvenue sur le portail de la famille Demongeot. Ce site est une
+            vitrine de nos expertises croisées dans le monde de l'informatique
+            de pointe. Avec une passion commune pour la technologie, nous
+            œuvrons dans deux domaines critiques et complémentaires du cycle de
+            vie logiciel.
+          </p>
+          <p>
+            <strong>Céline Demongeot</strong>, Ingénieur QA Senior certifiée
+            ISTQB, se spécialise dans l'assurance qualité (IVVQ), garantissant
+            la robustesse et la fiabilité des solutions logicielles.
+          </p>
+          <p>
+            <strong>Richard Demongeot</strong> apporte son expertise en
+            ingénierie systèmes, réseaux et infrastructures (BGP, AS206014),
+            avec un focus sur la performance et la sécurité des architectures
+            serveurs.
+          </p>
+          <p>
+            Ensemble, nous partageons une vision de l'informatique alliant
+            rigueur technique, innovation et excellence opérationnelle.
+          </p>
+        </section>
+
         <div class="intro">
           <h2>Découvrez Notre Expertise</h2>
           <p>
@@ -279,11 +423,13 @@
             target="_blank"
             rel="noopener"
           >
-            <div class="link-card-icon">👩‍💻</div>
+            <div class="link-card-icon" aria-hidden="true">👩‍💻</div>
             <h3>CV de Céline DEMONGEOT</h3>
             <p>
-              Ingénieure QA Senior | Expert IVVQ | Certifiée ISTQB Full
-              Advanced. 20 ans d'expertise en Test & Validation.
+              Ingénieure QA Senior | Expert IVVQ | Certifiée ISTQB Full Advanced
+              (ISTQB Foundation, ISTQB Test Manager, ISTQB Test Analyst, ISTQB
+              Technical Test Analyst) + ISTQB Agile Tester. 20 ans d'expertise
+              en Test & Validation.
             </p>
             <span class="link-card-url">cv.demongeot.org</span>
           </a>
@@ -294,7 +440,7 @@
             target="_blank"
             rel="noopener"
           >
-            <div class="link-card-icon">👨‍💻</div>
+            <div class="link-card-icon" aria-hidden="true">👨‍💻</div>
             <h3>CV de Richard DEMONGEOT</h3>
             <p>
               Expert en développement informatique et solutions techniques.
@@ -309,7 +455,7 @@
             target="_blank"
             rel="noopener"
           >
-            <div class="link-card-icon">🌐</div>
+            <div class="link-card-icon" aria-hidden="true">🌐</div>
             <h3>Site de Richard DEMONGEOT</h3>
             <p>
               Portfolio professionnel, projets et réalisations informatiques.
@@ -324,7 +470,7 @@
             target="_blank"
             rel="noopener"
           >
-            <div class="link-card-icon">🏢</div>
+            <div class="link-card-icon" aria-hidden="true">🏢</div>
             <h3>RDEM Systems</h3>
             <p>
               Société spécialisée en solutions informatiques et systèmes.
