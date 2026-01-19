@@ -1,0 +1,504 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Famille Demongeot | Expertise QA, Développement & Systèmes IT</title>
+    <meta
+      name="description"
+      content="Portail professionnel de la famille Demongeot. Céline Demongeot (Ingénieur QA Senior certifiée ISTQB) et Richard Demongeot (Expert Systèmes & Réseaux AS206014). Découvrez nos expertises et parcours IT."
+    />
+    <meta
+      name="keywords"
+      content="demongeot, céline, ingénieur, validation, test, qa, ivvq, intégration, ISTQB, développement, informatique, cv, rdem systems"
+    />
+    <meta
+      property="og:title"
+      content="Famille Demongeot - Experts Informatiques"
+    />
+    <meta
+      property="og:description"
+      content="Découvrez les profils de Céline (QA) et Richard (Dev/Systèmes)."
+    />
+    <meta property="og:url" content="https://www.demongeot.org" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://www.demongeot.org/og-image.jpg"
+    />
+    <style>
+      :root {
+        --color-primary: #2563eb;
+        --color-accent: #7c3aed;
+        --color-text: #1f2937;
+        --color-text-light: #6b7280;
+        --color-white: #ffffff;
+        --color-border: #e5e7eb;
+        --color-bg-light: #f9fafb;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family:
+          -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          "Helvetica Neue", Arial, sans-serif;
+
+        line-height: 1.6;
+        color: var(--color-text);
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem;
+      }
+
+      .container {
+        max-width: 1200px;
+        width: 100%;
+        background: var(--color-white);
+        border-radius: 1.5rem;
+        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        overflow: hidden;
+      }
+
+      .header {
+        background: linear-gradient(
+          135deg,
+          var(--color-primary) 0%,
+          var(--color-accent) 100%
+        );
+
+        color: var(--color-white);
+        padding: 3rem 2rem;
+        text-align: center;
+      }
+
+      .header h1 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+        letter-spacing: -0.025em;
+      }
+
+      .header p {
+        font-size: 1.125rem;
+        opacity: 0.9;
+        max-width: 600px;
+        margin: 0 auto;
+      }
+
+      .content {
+        padding: 3rem 2rem;
+      }
+
+      .about-section {
+        background: linear-gradient(
+          135deg,
+          rgba(37, 99, 235, 0.05) 0%,
+          rgba(124, 58, 237, 0.05) 100%
+        );
+        border-radius: 1rem;
+        padding: 2.5rem;
+        margin-bottom: 3rem;
+        border: 1px solid var(--color-border);
+      }
+
+      .about-section h2 {
+        font-size: 2rem;
+        color: var(--color-primary);
+        margin-bottom: 1.5rem;
+        font-weight: 700;
+        text-align: center;
+      }
+
+      .about-section p {
+        font-size: 1.0625rem;
+        color: var(--color-text);
+        line-height: 1.8;
+        margin-bottom: 1.25rem;
+        text-align: justify;
+      }
+
+      .about-section p:last-child {
+        margin-bottom: 0;
+      }
+
+      .about-section strong {
+        color: var(--color-primary);
+        font-weight: 600;
+      }
+
+      .intro {
+        text-align: center;
+        margin-bottom: 3rem;
+      }
+
+      .intro h2 {
+        font-size: 1.875rem;
+        color: var(--color-primary);
+        margin-bottom: 1rem;
+        font-weight: 700;
+      }
+
+      .intro p {
+        font-size: 1.125rem;
+        color: var(--color-text-light);
+        max-width: 700px;
+        margin: 0 auto;
+        line-height: 1.7;
+      }
+
+      .links-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 2rem;
+
+        margin-top: 3rem;
+      }
+
+      .link-card {
+        background: var(--color-white);
+        border: 2px solid var(--color-border);
+        border-radius: 1rem;
+        padding: 2rem;
+        text-decoration: none;
+        color: var(--color-text);
+        transition: all 0.3s ease;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .link-card::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 5px;
+        background: linear-gradient(
+          90deg,
+          var(--color-primary),
+          var(--color-accent)
+        );
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 0.3s ease;
+      }
+
+      .link-card:hover::before {
+        transform: scaleX(1);
+      }
+
+      .link-card:hover {
+        transform: translateY(-8px);
+        box-shadow:
+          0 20px 25px -5px rgba(0, 0, 0, 0.1),
+          0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        border-color: var(--color-primary);
+      }
+
+      .link-card-icon {
+        width: 60px;
+        height: 60px;
+        background: linear-gradient(
+          135deg,
+          var(--color-primary),
+          var(--color-accent)
+        );
+        border-radius: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 1.5rem;
+        font-size: 1.75rem;
+      }
+
+      .link-card h3 {
+        font-size: 1.375rem;
+        font-weight: 700;
+        margin-bottom: 0.75rem;
+
+        color: var(--color-primary);
+      }
+
+      .link-card p {
+        color: var(--color-text-light);
+        margin-bottom: 1rem;
+        line-height: 1.6;
+      }
+
+      .link-card-url {
+        font-size: 0.875rem;
+        color: var(--color-accent);
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+
+      .link-card-url::after {
+        content: "→";
+        font-size: 1.25rem;
+        transition: transform 0.3s ease;
+      }
+
+      .link-card:hover .link-card-url::after {
+        transform: translateX(5px);
+      }
+
+      .footer {
+        background: var(--color-bg-light);
+        padding: 2rem;
+        text-align: center;
+        color: var(--color-text-light);
+        font-size: 0.875rem;
+        border-top: 1px solid var(--color-border);
+      }
+
+      @media (max-width: 768px) {
+        .header h1 {
+          font-size: 2rem;
+        }
+
+        .header p {
+          font-size: 1rem;
+        }
+
+        .about-section {
+          padding: 2rem 1.5rem;
+        }
+
+        .about-section h2 {
+          font-size: 1.625rem;
+        }
+
+        .about-section p {
+          font-size: 1rem;
+          text-align: left;
+        }
+
+        .intro h2 {
+          font-size: 1.5rem;
+        }
+
+        .intro p {
+          font-size: 1rem;
+        }
+
+        .content {
+          padding: 2rem 1.5rem;
+        }
+
+        .links-grid {
+          grid-template-columns: 1fr;
+          gap: 1.5rem;
+        }
+      }
+
+      @media (max-width: 480px) {
+        body {
+          padding: 1rem;
+        }
+
+        .header {
+          padding: 2rem 1.5rem;
+        }
+
+        .content {
+          padding: 1.5rem 1rem;
+        }
+
+        .about-section {
+          padding: 1.5rem 1rem;
+        }
+      }
+    </style>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Céline Demongeot",
+        "jobTitle": "Ingénieur Test & Validation Senior, QA, IVVQ",
+        "url": "https://cv.demongeot.org",
+        "sameAs": ["https://www.linkedin.com/in/c%C3%A9line-demongeot/"]
+      }
+    </script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Richard Demongeot",
+        "jobTitle": "Fondateur et P-DG",
+        "url": "https://demongeot.biz",
+        "sameAs": [
+          "https://www.rdem-systems.com",
+          "https://ntp.rdem-systems.com",
+          "https://as206014.rdem-systems.com",
+          "https://mariadb.rdem-systems.com",
+          "https://proxmox.rdem-systems.com",
+          "https://managed-services.rdem-systems.com"
+        ],
+        "worksFor": {
+          "@type": "Organization",
+          "name": "RDEM Systems",
+          "url": "https://www.rdem-systems.com",
+          "logo": "https://www.rdem-systems.com/favicon.ico",
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "technical support",
+            "url": "https://managed-services.rdem-systems.com"
+          },
+          "knowsAbout": [
+            "Virtualisation Proxmox VE",
+            "Infrastructures critiques",
+            "MariaDB Clusters & Database Management",
+            "NTP Stratum Services",
+            "BGP Networking & Autonomous Systems (AS206014)",
+            "Managed Services & Infogérance"
+          ]
+        },
+        "description": "Expert en infrastructures critiques, réseaux autonomes (AS206014) et solutions de virtualisation souveraines."
+      }
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1>Famille DEMONGEOT</h1>
+        <p>
+          Expertise en Informatique, Test & Validation, Développement et
+          Systèmes
+        </p>
+      </header>
+
+      <div class="content">
+        <section class="about-section">
+          <h2>À Propos</h2>
+          <p>
+            Bienvenue sur le portail de la famille Demongeot. Ce site est une
+            vitrine de nos expertises croisées dans le monde de l'informatique
+            de pointe. Avec une passion commune pour la technologie, nous
+            œuvrons dans deux domaines critiques et complémentaires du cycle de
+            vie logiciel.
+          </p>
+          <p>
+            <strong>Céline Demongeot</strong>, Ingénieur QA Senior certifiée
+            ISTQB, se spécialise dans l'assurance qualité (IVVQ), garantissant
+            la robustesse et la fiabilité des solutions logicielles.
+          </p>
+          <p>
+            <strong>Richard Demongeot</strong> apporte son expertise en
+            ingénierie systèmes, réseaux et infrastructures (BGP, AS206014),
+            avec un focus sur la performance et la sécurité des architectures
+            serveurs.
+          </p>
+          <p>
+            Ensemble, nous partageons une vision de l'informatique alliant
+            rigueur technique, innovation et excellence opérationnelle.
+          </p>
+        </section>
+
+        <div class="intro">
+          <h2>Découvrez Notre Expertise</h2>
+          <p>
+            Deux professionnels passionnés par l'informatique : Céline,
+            Ingénieur QA certifiée ISTQB avec 20+ ans d'expérience en
+            validation, et son frère, expert en développement et solutions
+            informatiques.
+          </p>
+        </div>
+
+        <div class="links-grid">
+          <a
+            href="https://cv.demongeot.org/"
+            class="link-card"
+            target="_blank"
+            rel="noopener"
+          >
+            <div class="link-card-icon" aria-hidden="true">👩‍💻</div>
+            <h3>CV de Céline DEMONGEOT</h3>
+            <p>
+              Ingénieure QA Senior | Expert IVVQ | Certifiée ISTQB Full Advanced
+              (ISTQB Foundation, ISTQB Test Manager, ISTQB Test Analyst, ISTQB
+              Technical Test Analyst) + ISTQB Agile Tester. 20 ans d'expertise
+              en Test & Validation.
+            </p>
+            <span class="link-card-url">cv.demongeot.org</span>
+          </a>
+
+          <a
+            href="https://www.demongeot.biz/LANG-FR_PAGE-EC_Cv.html"
+            class="link-card"
+            target="_blank"
+            rel="noopener"
+          >
+            <div class="link-card-icon" aria-hidden="true">👨‍💻</div>
+            <h3>CV de Richard DEMONGEOT</h3>
+            <p>
+              Expert en développement informatique et solutions techniques.
+              Découvrez son parcours professionnel détaillé.
+            </p>
+            <span class="link-card-url">demongeot.biz/cv</span>
+          </a>
+
+          <a
+            href="https://www.demongeot.biz/"
+            class="link-card"
+            target="_blank"
+            rel="noopener"
+          >
+            <div class="link-card-icon" aria-hidden="true">🌐</div>
+            <h3>Site de Richard DEMONGEOT</h3>
+            <p>
+              Portfolio professionnel, projets et réalisations informatiques.
+              Explorez son univers technique.
+            </p>
+            <span class="link-card-url">demongeot.biz</span>
+          </a>
+
+          <a
+            href="https://www.rdem-systems.com/"
+            class="link-card"
+            target="_blank"
+            rel="noopener"
+          >
+            <div class="link-card-icon" aria-hidden="true">🏢</div>
+            <h3>RDEM Systems</h3>
+            <p>
+              Société spécialisée en solutions informatiques et systèmes.
+              Services professionnels et expertise technique.
+            </p>
+            <span class="link-card-url">rdem-systems.com</span>
+          </a>
+
+          <a
+            href="https://theo.demongeot.biz/"
+            class="link-card"
+            target="_blank"
+            rel="noopener"
+          >
+            <div class="link-card-icon" aria-hidden="true">🚀</div>
+            <h3>CV de Théo DEMONGEOT</h3>
+            <p>
+              Découvrez le profil et les compétences de la nouvelle génération.
+              Parcours de formation et projets en informatique.
+            </p>
+            <span class="link-card-url">theo.demongeot.biz</span>
+          </a>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <p>&copy; 2026 Famille DEMONGEOT. Tous droits réservés.</p>
+      </footer>
+    </div>
+  </body>
+</html>
